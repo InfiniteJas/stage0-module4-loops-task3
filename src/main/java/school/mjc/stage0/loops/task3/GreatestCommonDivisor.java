@@ -7,9 +7,9 @@ public class GreatestCommonDivisor {
 
         while (first != second) {
             if (first > second) {
-                first = first - second;
+                first = first % second;
             } else {
-                second = second - first;
+                second = second % first;
             }
         }
         System.out.println(first);
